@@ -1,0 +1,176 @@
+.ket-menu {}
+
+.scroll-container {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: transparent;
+  transform: translateY(-130px);
+}
+
+.scroll-container .scroll-bg {
+  width: 40px;
+  height: 80px;
+  border: 2px solid #21963a;
+  border-radius: 40px;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.scroll-bg .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #21963a;
+  margin: 0 auto;
+  transition: .5s;
+}
+
+@media only screen and (max-width: 991px) {
+  .scroll-container {
+    transform: translateY(-20px);
+  }
+}
+
+.about {
+  background-color: #F3F3F3;
+  padding: 110px 0 65px 0;
+}
+
+.title-about {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 30px;
+  color: #21963B;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.desc-about {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  max-width: 886px;
+  margin: 0 auto;
+}
+
+/*  */
+
+.varian {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  max-width: 502px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  transform: translateY(50%);
+}
+
+.varian-menu, .varian-rasa {
+  margin: 0 auto;
+}
+
+.title-varmen, .title-varsa {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 40px;
+  color: #21963B;
+}
+
+.desc-varmen, .desc-varsa {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 20px;
+  color: #21963B;
+}
+
+.garis-varian {
+  height: 60px;
+  width: 1px;
+  background: #C4C4C4;
+  margin: auto 0;
+}
+
+/*  */
+
+.mitra {
+  display: flex;
+  /* background-image: url(/assets/mitra/Join\ Franchise.png);
+  background-size: 100% auto;
+  background-repeat: no-repeat; */
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 39px 0 39px 39px;
+  margin-top: 150px;
+  margin: 150px auto 0 auto;
+  max-width: 1340px;
+}
+
+.con-desc-mitra {
+  /* transform: translateY(25%); */
+  margin-left: 90px;
+  margin-top: 66px;
+  max-width: 50%;
+}
+
+.img-mitra {
+  padding: 42px;
+  background: rgba(33, 150, 59, 0.5);
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.test-ae {
+  max-width: 434px;
+}
+
+.title-mitra {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: #21963B;
+  margin-bottom: 17px;
+}
+
+.desc-title {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+}
+
+.btn-mitra {
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 20px;
+  color: #21963B;
+  padding: 10px 29px;
+  border: 2px solid #21963B;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-mitra:hover {
+  background-color: #21963B;
+  color: #fff;
+}
+
+.bulat-mitra {
+  width: auto;
+  height: 100%;
+  bottom: -11rem;
+  position: relative;
+  /* transform: translateY(100%); */
+  /* margin-bottom: -39px; */
+}
