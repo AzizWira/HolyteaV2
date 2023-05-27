@@ -52,7 +52,7 @@
 }
 
 .desc-about {
-  font-family: 'Inter';
+  font-family: 'Poppins';
   font-weight: 500;
   font-size: 20px;
   text-align: center;
@@ -60,6 +60,29 @@
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 1200px) {
+  .about {
+    padding: 80px 0 35px 0;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .about {
+    padding: 70px 0 35px 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .about {
+    padding: 60px 0 35px 0;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .about {
+    padding: 50px 0 35px 0;
+  }
+}
 /*  */
 
 .varian {
@@ -177,7 +200,7 @@
 
 /* location */
 
-.location{
+.location {
   margin-top: 150px;
 }
 
@@ -274,7 +297,7 @@
     font-size: 16px;
   }
 
-  .maps-3{
+  .maps-3 {
     font-size: 16px;
   }
 
@@ -282,4 +305,66 @@
     margin-right: 0;
     margin-bottom: 20px;
   }
+}
+
+/* slide produk */
+
+.con-produk {
+  margin-top: 130px;
+  overflow-x: hidden;
+}
+
+.title-produk {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+  color: #21963B;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.con-slide-produk {
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  padding: 30px 50px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.slide-produk {
+  text-align: center;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.produk-buttom {
+  display: flex;
+  justify-content: end;
+  padding-right: 50px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.lihat-lain {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 25px;
+  color: #21963B;
+}
+
+.fa-arrow-right{
+  font-size: 30px;
+  color: #21963B;
+  margin-left: 10px;
+  transform: translateX(0);
+}
+
+.produk-buttom:hover .fa-arrow-right {
+  transform: translateX(10px);
 }
