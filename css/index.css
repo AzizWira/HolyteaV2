@@ -58,6 +58,7 @@
   text-align: center;
   max-width: 886px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -83,6 +84,7 @@
     padding: 50px 0 35px 0;
   }
 }
+
 /*  */
 
 .varian {
@@ -122,10 +124,36 @@
   margin: auto 0;
 }
 
+@media only screen and (max-width: 991px) {
+  .varian {
+    max-width: 420px;
+  }
+
+  .title-varmen, .title-varsa {
+    font-size: 30px;
+  }
+
+  .desc-varmen, .desc-varsa {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .varian {
+    max-width: 350px;
+  }
+
+  .desc-varmen, .desc-varsa {
+    font-size: 16px;
+  }
+}
+
 /*  */
 
 .mitra {
+  position: relative;
   display: flex;
+  align-items: center;
   /* background-image: url(/assets/mitra/Join\ Franchise.png);
   background-size: 100% auto;
   background-repeat: no-repeat; */
@@ -135,13 +163,17 @@
   margin-top: 150px;
   margin: 150px auto 0 auto;
   max-width: 1340px;
+  gap: 30px;
 }
 
 .con-desc-mitra {
   /* transform: translateY(25%); */
-  margin-left: 90px;
-  margin-top: 66px;
+  /* margin-left: 90px;
+  margin-top: 66px; */
   max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .img-mitra {
@@ -189,11 +221,91 @@
   color: #fff;
 }
 
+@media only screen and (max-width: 991px) {
+  .mitra {
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .title-mitra {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .desc-title {
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .btn-mitra {
+    font-size: 15px;
+    color: #21963B;
+    padding: 10px 29px;
+    border: 2px solid #21963B;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .img-mitra {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .con-bulat-mitra {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 715px) {
+  .mitra {
+    padding: 10px;
+    margin: 80px auto 0 auto;
+  }
+
+  .title-mitra {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .desc-title {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .btn-mitra {
+    font-size: 12px;
+    padding: 5px 15px;
+  }
+
+  .img-mitra {
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .mitra {
+    flex-direction: column;
+    align-items: normal;
+    gap: 10px;
+  }
+
+  .con-desc-mitra {
+    max-width: 100%;
+  }
+}
+
+.con-bulat-mitra {
+  /* width: 200px; */
+}
+
 .bulat-mitra {
-  width: auto;
-  height: 100%;
-  bottom: -11rem;
-  position: relative;
+  /* width: 100%;
+  height: auto; */
+  position: absolute;
+  bottom: 0;
+  right: 0;
   /* transform: translateY(100%); */
   /* margin-bottom: -39px; */
 }
@@ -314,6 +426,18 @@
   overflow-x: hidden;
 }
 
+@media only screen and (max-width: 991px) {
+  .con-produk {
+    margin-top: 90px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .con-produk {
+    margin-top: 50px;
+  }
+}
+
 .title-produk {
   font-family: 'Poppins';
   font-weight: 700;
@@ -331,6 +455,12 @@
   padding: 30px 50px;
 }
 
+@media only screen and (max-width: 1000px) {
+  .con-slide-produk {
+    padding: 30px 20px;
+  }
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -343,12 +473,46 @@
   cursor: pointer;
 }
 
+@media only screen and (max-width: 1000px) {
+  .slide-produk img {
+    width: 230px;
+  }
+}
+
 .produk-buttom {
   display: flex;
   justify-content: end;
   padding-right: 50px;
   align-items: center;
   cursor: pointer;
+}
+
+.produk-buttom2 {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .produk-buttom {
+    display: none;
+  }
+
+  .produk-buttom2 {
+    margin-left: 50px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+  }
+
+  .produk-buttom2 p{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+    color: #21963B;
+  }
+
+  .produk-buttom2 i{
+    font-size: 20px;
+  }
 }
 
 .lihat-lain {
@@ -358,7 +522,7 @@
   color: #21963B;
 }
 
-.fa-arrow-right{
+.fa-arrow-right {
   font-size: 30px;
   color: #21963B;
   margin-left: 10px;

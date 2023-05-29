@@ -740,6 +740,8 @@ body {
 
 .slick-slide img {
   width: 100%;
+  border: 1px solid #c9c9c9;
+  border-radius: 10px;
 }
 
 .slick-slider {
@@ -823,6 +825,18 @@ body {
   margin: 150px 0 0 0;
 }
 
+@media only screen and (max-width: 991px) {
+  .container-best {
+    margin: 100px 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container-best {
+    margin: 70px 0 0 0;
+  }
+}
+
 .tittle-best {
   text-align: center;
   font-family: Poppins;
@@ -866,7 +880,8 @@ body {
 
 @media only screen and (max-width: 600px) {
   .con-img-best {
-    column-gap: 10px;
+    /* column-gap: 10px; */
+    gap: 10px;
     flex-direction: column;
   }
 
